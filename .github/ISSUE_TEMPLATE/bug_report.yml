@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem in FrameVault.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For vulnerabilities, follow SECURITY.md. Do not attach private MP4s,
+        passwords, extracted files, or screenshots with personal paths.
+  - type: input
+    id: version
+    attributes:
+      label: FrameVault version
+      placeholder: "For example: 2.0.2"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows version and relevant environment
+      description: Include display scaling or transparency mods for visual issues.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a synthetic workspace if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the error text or a redacted screenshot if useful.
+    validations:
+      required: true

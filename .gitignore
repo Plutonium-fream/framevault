@@ -1,0 +1,38 @@
+# Build output and local SDK/package caches
+/.tools/
+**/bin/
+**/obj/
+/dist/
+/artifacts/
+TestResults/
+*.log
+
+# Editor and operating-system state
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local agent configuration and unrelated review material
+/.agents/
+/.codex/
+/.aws/
+/.review-*/
+
+# Secrets and signing keys
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Personal workspace videos; only the synthetic test fixture belongs in Git
+*.mp4
+!tests/assets/video-fixture.mp4

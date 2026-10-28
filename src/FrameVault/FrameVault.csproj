@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FrameVault</AssemblyName>
+    <RootNamespace>FrameVault</RootNamespace>
+    <Version>2.0.2</Version>
+    <Authors>FrameVault</Authors>
+    <Description>A portable desktop workspace stored inside an MP4.</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../FrameVault.Core/FrameVault.Core.csproj" />
+  </ItemGroup>
+</Project>
